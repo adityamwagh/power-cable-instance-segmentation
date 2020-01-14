@@ -1,2 +1,45 @@
 remote-theme: ad1tyawagh/jekyll-theme-clean-portfolio
 title: Fault Detection in Power Cables
+# Site settings
+
+firstname: Aditya
+secondname: Wagh
+general_email: aditya@adityawagh.ml
+academic_email: f2015382p@alumni.bits-pilani.ac.in
+description: > 
+ I want to change the world with design and engineering.
+author: Aditya Wagh
+logo: /assets/images/icon.png
+lang: en-US
+resume_link: https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf
+baseurl: ""
+url: "https://www.adityawagh.ml/" 
+twitter_username: ad1tyawagh
+github_username: ad1tyawagh
+linkedin_username: waghaditya
+
+# Build settings 
+
+markdown: kramdown
+mathjax: true
+kramdown:
+  math_engine: mathjax
+highlighter: rouge  
+
+# Other options
+
+permalink: blog/:year/:month/:title
+
+plugins:
+- github-pages
+- jekyll-seo-tag
+- jekyll-menus
+- jekyll-remote-theme 
+- jekyll-archives
+- jekyll-compose 
+- jemoji
+- jekyll-youtube
+- jekyll-seo-tag 
+- jekyll-font-awesome-sass
+- jekyll-toc
+- jekyll-autoprefixer

@@ -4,10 +4,10 @@ title: Aditya Wagh
 firstname: Aditya
 secondname: Wagh
 remote_theme: ad1tyawagh/ad1tyawagh.github.io
-
 author: Aditya Wagh
 logo: /assets/images/icon.png
 lang: en-US
+resume_link: https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf
 baseurl: ""
 url: "https://www.adityawagh.ml/" 
 twitter_username: ad1tyawagh

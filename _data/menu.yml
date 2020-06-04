@@ -1,0 +1,12 @@
+- title: "Home"
+  href: "/index"
+
+# - title: "Blog"
+#   href: "/blog"
+  
+- title: "Projects"
+  href: "/index#Projects"
+
+- title: "CV" 
+  href_phone: "https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf"
+  href_laptop: "https://www.adityawagh.ml/cv.html"

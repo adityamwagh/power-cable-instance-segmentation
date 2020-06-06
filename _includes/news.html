@@ -6,7 +6,7 @@
         <table class="table news-table">
             {% for news in site.data.news%}
             <tr class="p-0 news-row border-0">
-                <td class="p-0 border-0 news-date"><b class="text-monospace text-uppercase">{{news.date}}</b></td>
+                <td class="p-0 border-0 text-nowrap d-inline align-top"><b class="text-monospace text-uppercase">{{news.date}}</b></td>
                 <td class="p-0 pl-3 border-0 news-content">{{news.event}}</td>
             </tr>
             {% endfor %}

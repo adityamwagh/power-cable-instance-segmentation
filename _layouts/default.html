@@ -5,8 +5,12 @@
 
 <body>
     {% include header.html %}
-    <div class="container rounded my-sm-4 bg-white active shadow-lg pb-3 px-4" style="max-width: 860px">
-        {{ content }}
+    <div class="container-fluid">
+        <div class="row">
+            <main class="container rounded my-sm-4 active shadow-lg pb-3 px-4" style="max-width: 860px;">
+                {{ content }}
+            </main>
+        </div>
     </div>
 </body>
 {% include footer.html %}

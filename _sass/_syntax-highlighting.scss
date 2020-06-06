@@ -18,14 +18,14 @@ $comments: #75715e;
 $linenos: #A9B7C6;
 
 .highlight {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   color: $foreground;
   background-color: $background;
   @include rounded(4px);
   pre {
     position: relative;
     margin: 0;
-    padding: 1em;
+    padding: 1rem;
     overflow-x: auto;
   }
   pre::-webkit-scrollbar {
@@ -53,7 +53,7 @@ $linenos: #A9B7C6;
    .cp { color: $comments } /* Comment.Preproc */
    .c1 { color: $comments } /* Comment.Single */
    .cs { color: $comments } /* Comment.Special */
-   .ge { font-style: italic } /* Generic.Emph */
+   .ge { font-style: italic } /* Generic.remph */
    .gs { font-weight: bold } /* Generic.Strong */
    .kc { color: $keywords } /* Keyword.Constant */
    .kd { color: $keywords } /* Keyword.Declaration */
@@ -124,13 +124,13 @@ pre code {
 
 pre.highlight {
 	border       : 0px solid lightgray;
-	border-radius: 0.5em;
-	padding      : 1em;
-	margin       : 0em;
+	border-radius: 0.5rem;
+	padding      : 1rem;
+	margin       : 0rem;
 }
 
 div.highlight {
 	border       : 1px solid lightgray;
-	border-radius: 0.5em;
-	margin       : 0.5em;
+	border-radius: 0.5rem;
+	margin       : 0.5rem;
 }

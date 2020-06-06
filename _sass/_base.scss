@@ -7,6 +7,7 @@ body {
     font-family: $base-font-family;
     font-size  : $base-font-size;
     font-weight: 100;
+    height     : 100%;
 
     color                   : $text-color;
     letter-spacing          : $base-letter-spacing;
@@ -17,8 +18,8 @@ body {
 
 // Navbar
 nav {
-    padding-left : 0em !important;
-    padding-right: 0em !important;
+    padding-left : 0rem !important;
+    padding-right: 0rem !important;
 }
 
 // Headers
@@ -28,14 +29,14 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom : 0em;
-    margin-left   : 0em;
-    margin-right  : 0em;
+    margin-bottom : 0rem;
+    margin-left   : 0rem;
+    margin-right  : 0rem;
     font-weight   : 200;
     font-family   : $title-font-family;
     color         : $title-color;
-    padding-top   : 0.5em;
-    padding-bottom: 0.5em;
+    padding-top   : 1rem;
+    padding-bottom: 1rem;
 }
 
 h1,
@@ -43,45 +44,44 @@ h2,
 :after {
     display      : block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
 }
 
 
 
 h1 {
-    font-size: 2em !important;
+    font-size: 2rem !important;
 }
 
 h2 {
-    font-size: 1.6em !important;
+    font-size: 1.6rem !important;
 }
 
 h3 {
-    font-size: 1.4em !important;
+    font-size: 1.4rem !important;
 }
 
 h4 {
-    font-size: 1.25em !important;
+    font-size: 1.25rem !important;
 }
 
 h5 {
-    font-size: 1.125em !important;
+    font-size: 1.125rem !important;
 }
 
 h6 {
-    font-size: 1em !important;
+    font-size: 1rem !important;
 }
 
 // Paragraphs
 p {
-    margin        : 0em;
-    padding-bottom: 0.75em;
-    padding-top   : 0.75em;
+    margin        : 0rem;
+    padding-bottom: 0.75rem;
+    padding-top   : 0.75rem;
     font-family   : $base-font-family;
 }
 
 hr {
-    margin: 0em;
+    margin: 0rem;
 }
 
 a b {
@@ -103,21 +103,23 @@ strong {
     font-weight: 200 !important;
 }
 
-// // Lists
-// ul,
-// ol {
-//   padding        : 0em;
-//   margin         : 0em 0em 1em 0em;
-//   list-style-type: none;
-// }
+// TOC
+.toc-heading {
+    margin-top : 1rem !important;
+    padding    : 0rem;
+    font-weight: 400;
+    font-size  : 1.125rem;
+}
 
-// li {
+ul.section-nav {
+    list-style-type: none;
+    font-size      : 0.875rem !important;
+}
 
-//   >ul,
-//   >ol {
-//     margin-bottom: 0;
-//   }
-// }
+li.toc-entry {
+    list-style-type: none;
+}
+
 // Blockquotes
 
 blockquote {
@@ -145,51 +147,36 @@ blockquote {
 
 // Icons
 
-.icon {
-    >svg {
-        display       : inline-block;
-        width         : 16px;
-        height        : 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+.icons {
+    width : 2rem;
+    height: 2rem;
 }
 
 // Header name
+
 .firstname {
     font-weight: 400 !important;
-    font-size  : 28px;
+    font-size  : 1.75rem;
 }
 
 .secondname {
     font-weight: 100;
-    font-size  : 28px;
+    font-size  : 1.75rem;
 }
 
 // Post
 .post-title-div {
     border-bottom : 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 1em;
-    padding-top   : 1em;
+    padding-bottom: 1rem;
+    padding-top   : 1rem;
 }
 
 .post-title-header {
     display       : block;
     border-bottom : 0px solid rgba(0, 0, 0, 0.1);
-    margin-bottom : 0em;
-    padding-top   : 0em;
-    padding-bottom: 0em;
-}
-
-// TOC
-.toc-heading {
-    margin-top : 1em !important;
-    padding    : 0em;
-    font-weight: 400;
-    font-size  : 1.125em;
+    margin-bottom : 0rem;
+    padding-top   : 0rem;
+    padding-bottom: 0rem;
 }
 
 // Blog List
@@ -202,11 +189,9 @@ blockquote {
 .project-heading {
     border     : 0px;
     font-weight: 300;
-    padding: 0em;
+    padding    : 0rem;
 }
 
-// News
-.news-table {
-    margin-top   : 1em;
-    margin-bottom: 1em;
+.text-monospace {
+    font-family: $code-font-family !important;
 }

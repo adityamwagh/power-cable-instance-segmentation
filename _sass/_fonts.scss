@@ -1,0 +1,64 @@
+@font-face {
+    font-family : SegoeUI;
+    src         : local("Segoe UI Light"), url("/assets/fonts/segoe-ui/light.woff2") format("woff2"), url("/assets/fonts/segoe-ui/light.woff") format("woff"), url("/assets/fonts/segoe-ui/light.tff") format("truetype");
+    font-weight : 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : SegoeUI;
+    src         : local("Segoe UI Semilight"), url("/assets/fonts/segoe-ui/semilight.woff2") format("woff2"), url("/assets/fonts/segoe-ui/semilight.woff") format("woff"), url("/assets/fonts/segoe-ui/semilight.tff") format("truetype");
+    font-weight : 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : SegoeUI;
+    src         : local("Segoe UI"), url("/assets/fonts/segoe-ui/normal.woff2") format("woff2"), url("/assets/fonts/segoe-ui/normal.woff") format("woff"), url("/assets/fonts/segoe-ui/normal.tff") format("truetype");
+    font-weight : 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : SegoeUI;
+    src         : local("Segoe UI Bold"), url("/assets/fonts/segoe-ui/bold.woff2") format("woff2"), url("/assets/fonts/segoe-ui/bold.woff") format("woff"), url("/assets/fonts/segoe-ui/bold.tff") format("truetype");
+    font-weight : 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : SegoeUI;
+    src         : local("Segoe UI Semibold"), url("/assets/fonts/segoe-ui/semibold.woff2") format("woff2"), url("/assets/fonts/segoe-ui/semibold.woff") format("woff"), url("/assets/fonts/segoe-ui/semibold.tff") format("truetype");
+    font-weight : 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : Mononoki;
+    src         : local("Mononoki"), url("/assets/fonts/mononoki/mononoki-Regular.woff2") format("woff2"), url("/assets/fonts/mononoki/mononoki-Regular.woff") format("woff"), url("/assets/fonts/mononoki/mononoki-Regular.tff") format("truetype"), url("/assets/fonts/mononoki/mononoki-Regular.eot") format("eot");
+    font-weight : 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : Mononoki;
+    src         : local("Mononoki Bold"), url("/assets/fonts/mononoki/mononoki-Bold.woff2") format("woff2"), url("/assets/fonts/mononoki/mononoki-Bold.woff") format("woff"), url("/assets/fonts/mononoki/mononoki-Bold.tff") format("truetype"), url("/assets/fonts/mononoki/mononoki-Bold.eot") format("eot");
+    font-weight : 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : Mononoki;
+    src         : local("Mononoki Italic"), url("/assets/fonts/mononoki/mononoki-Italic.woff2") format("woff2"), url("/assets/fonts/mononoki/mononoki-Italic.woff") format("woff"), url("/assets/fonts/mononoki/mononoki-Italic.tff") format("truetype"), url("/assets/fonts/mononoki/mononoki-Italic.eot") format("eot");
+    font-style  : italic;
+    font-weight : 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : Mononoki;
+    src         : local("Mononoki Bold Italic"), url("/assets/fonts/mononoki/mononoki-BoldItalic.woff2") format("woff2"), url("/assets/fonts/mononoki/mononoki-BoldItalic.woff") format("woff"), url("/assets/fonts/mononoki/mononoki-BoldItalic.tff") format("truetype"), url("/assets/fonts/mononoki/mononoki-BoldItalic.eot") format("eot");
+    font-style  : italic;
+    font-weight : 700;
+    font-display: swap;
+}

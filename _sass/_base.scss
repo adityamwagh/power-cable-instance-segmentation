@@ -1,0 +1,212 @@
+// Basic Styling
+
+body {
+    background : #ffffff !important;
+    overflow-y : scroll;
+    overflow-x : hidden;
+    font-family: $base-font-family;
+    font-size  : $base-font-size;
+    font-weight: 100;
+
+    color                   : $text-color;
+    letter-spacing          : $base-letter-spacing;
+    line-height             : $base-line-height;
+    background-color        : $background-color;
+    -webkit-text-size-adjust: 100%;
+}
+
+// Navbar
+nav {
+    padding-left : 0em !important;
+    padding-right: 0em !important;
+}
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom : 0em;
+    margin-left   : 0em;
+    margin-right  : 0em;
+    font-weight   : 200;
+    font-family   : $title-font-family;
+    color         : $title-color;
+    padding-top   : 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h1,
+h2,
+:after {
+    display      : block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+
+
+h1 {
+    font-size: 2em !important;
+}
+
+h2 {
+    font-size: 1.6em !important;
+}
+
+h3 {
+    font-size: 1.4em !important;
+}
+
+h4 {
+    font-size: 1.25em !important;
+}
+
+h5 {
+    font-size: 1.125em !important;
+}
+
+h6 {
+    font-size: 1em !important;
+}
+
+// Paragraphs
+p {
+    margin        : 0em;
+    padding-bottom: 0.75em;
+    padding-top   : 0.75em;
+    font-family   : $base-font-family;
+}
+
+hr {
+    margin: 0em;
+}
+
+a b {
+    color: $title-color;
+}
+
+a {
+    color      : $blue-color-light;
+    font-weight: 400;
+}
+
+a :visited {
+    color      : $blue-color-dark;
+    font-weight: 400;
+}
+
+b,
+strong {
+    font-weight: 200 !important;
+}
+
+// // Lists
+// ul,
+// ol {
+//   padding        : 0em;
+//   margin         : 0em 0em 1em 0em;
+//   list-style-type: none;
+// }
+
+// li {
+
+//   >ul,
+//   >ol {
+//     margin-bottom: 0;
+//   }
+// }
+// Blockquotes
+
+blockquote {
+    color         : $grey-color;
+    border-left   : 4px solid $grey-color-light;
+    padding-left  : $spacing-unit / 2;
+    font-size     : $base-font-size;
+    letter-spacing: -1px;
+    font-style    : italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Clearfix
+
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear  : both;
+    }
+}
+
+// Icons
+
+.icon {
+    >svg {
+        display       : inline-block;
+        width         : 16px;
+        height        : 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+// Header name
+.firstname {
+    font-weight: 400 !important;
+    font-size  : 28px;
+}
+
+.secondname {
+    font-weight: 100;
+    font-size  : 28px;
+}
+
+// Post
+.post-title-div {
+    border-bottom : 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1em;
+    padding-top   : 1em;
+}
+
+.post-title-header {
+    display       : block;
+    border-bottom : 0px solid rgba(0, 0, 0, 0.1);
+    margin-bottom : 0em;
+    padding-top   : 0em;
+    padding-bottom: 0em;
+}
+
+// TOC
+.toc-heading {
+    margin-top : 1em !important;
+    padding    : 0em;
+    font-weight: 400;
+    font-size  : 1.125em;
+}
+
+// Blog List
+.blog-list {
+    list-style-type: none;
+    padding-left   : 0px;
+}
+
+// Project Heading
+.project-heading {
+    border     : 0px;
+    font-weight: 300;
+    padding: 0em;
+}
+
+// News
+.news-table {
+    margin-top   : 1em;
+    margin-bottom: 1em;
+}

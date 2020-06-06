@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="justify-content-start post-title-div mb-0">
+	<h1 class="post-title-header">{{ page.title }}
+	</h1>
+	{{ page.date | date: "%B %-d, %Y" }}
+</div>
+<article>
+	<p class="toc-heading">Contents</p>
+	{{ content | toc }}
+</article>

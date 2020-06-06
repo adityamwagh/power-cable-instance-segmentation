@@ -1,0 +1,56 @@
+<header class="sticky-header bg-white active">
+    <!-- -Navbar -->
+
+    <div class="container" style="max-width: 860px">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <a class="navbar-brand" href="https://www.adityawagh.ml">
+                <img class="align-middle" src="{{ site.baseurl }}/assets/icons/icon.png" width="32px" height="auto">
+                <span class="secondname text-nowrap align-middle text-capitalize">
+                    <span class="firstname">{{ site.firstname }}</span>{{ site.secondname }}
+
+                </span>
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+
+            <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    {% for menu_item in site.data.menu %}
+
+                    {% if menu_item.title == "Home" %}
+                    <li class="nav-item font-weight-bold">
+                        <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link text-gray-dark"><i
+                                class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
+                    </li>
+
+                    {% elsif menu_item.title == "CV" %}
+                    <!-- Display only on small devices - xs, sm, md -->
+                    <li class="nav-item font-weight-bold d-lg-none">
+                        <a class="nav-link text-gray-dark" href="{{ menu_item.href_phone}}""><i 
+                            class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
+                    </li>
+
+                    <!-- Display only on big devices lg, xl -->
+                    <li class=" nav-item font-weight-bold d-none d-lg-block">
+                        <a href="{{ menu_item.href_laptop }}" class="nav-link text-gray-dark"><i 
+                            class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
+                    </li>
+
+                    {% else %}
+                    <li class="nav-item font-weight-bold">
+                        <a href="{{ site.baseurl }}{{ menu_item.href }}" class="nav-link text-gray-dark"><i
+                                class="{{menu_item.icon}}"></i> {{ menu_item.title }}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

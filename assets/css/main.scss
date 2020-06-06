@@ -1,0 +1,167 @@
+--- 
+# Only the main Sass file needs front matter (the dashes are enough) 
+--- 
+@charset "utf-8";
+
+@import "bootstrap/bootstrap";
+
+// Fonts
+@font-face {
+    font-family: SegoeUI;
+    src        :
+        local("Segoe UI Light"),
+        url(../assets/fonts/segoe-ui/light.woff2) format("woff2"),
+        url(../assets/fonts/segoe-ui/light.woff) format("woff"),
+        url(../assets/fonts/segoe-ui/light.ttf) format("truetype");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src        :
+        local("Segoe UI Semilight"),
+        url(../assets/fonts/segoe-ui/semilight.woff2) format("woff2"),
+        url(../assets/fonts/segoe-ui/semilight.woff) format("woff"),
+        url(../assets/fonts/segoe-ui/semilight.ttf) format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src        :
+        local("Segoe UI"),
+        url(../assets/fonts/segoe-ui/normal.woff2) format("woff2"),
+        url(../assets/fonts/segoe-ui/normal.woff) format("woff"),
+        url(../assets/fonts/segoe-ui/normal.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src        :
+        local("Segoe UI Bold"),
+        url(../assets/fonts/segoe-ui/bold.woff2) format("woff2"),
+        url(../assets/fonts/segoe-ui/bold.woff) format("woff"),
+        url(../assets/fonts/segoe-ui/bold.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src        :
+        local("Segoe UI Semibold"),
+        url(../assets/fonts/segoe-ui/semibold.woff2) format("woff2"),
+        url(../assets/fonts/segoe-ui/semibold.woff) format("woff"),
+        url(../assets/fonts/segoe-ui/semibold.ttf) format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Mononoki;
+    src        :
+        local("Monoki"),
+        url(../assets/fonts/mononoki/mononoki-Regular.woff2) format("woff2"),
+        url(../assets/fonts/mononoki/mononoki-Regular.woff) format("woff"),
+        url(../assets/fonts/mononoki/mononoki-Regular.ttf) format("truetype"),
+        url(../assets/fonts/mononoki/mononoki-Regular.eot) format("eot");
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: Monoki;
+    src        :
+        local("Monoki Bold"),
+        url(../assets/fonts/mononoki/mononoki-Bold.woff2) format("woff2"),
+        url(../assets/fonts/mononoki/mononoki-Bold.woff) format("woff"),
+        url(../assets/fonts/mononoki/mononoki-Bold.ttf) format("truetype"),
+        url(../assets/fonts/mononoki/mononoki-Bold.eot) format("eot");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Monoki;
+    src        :
+        local("Monoki Italic"),
+        url(../assets/fonts/mononoki/mononoki-Italic.woff2) format("woff2"),
+        url(../assets/fonts/mononoki/mononoki-Italic.woff) format("woff"),
+        url(../assets/fonts/mononoki/mononoki-Italic.ttf) format("truetype"),
+        url(../assets/fonts/mononoki/mononoki-Italic.eot) format("eot");
+    font-style : italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Monoki;
+    src        :
+        local("Monoki Bold Italic"),
+        url(../assets/fonts/mononoki/mononoki-BoldItalic.woff2) format("woff2"),
+        url(../assets/fonts/mononoki/mononoki-BoldItalic.woff) format("woff"),
+        url(../assets/fonts/mononoki/mononoki-BoldItalic.ttf) format("truetype"),
+        url(../assets/fonts/mononoki/mononoki-BoldItalic.eot) format("eot");
+    font-style : italic;
+    font-weight: 700;
+}
+
+// Font Styling
+$base-font-family: SegoeUI,
+sans-serif;
+$title-font-family: SegoeUI,
+sans-serif;
+$base-font-size : 16px !important;
+$code-font-family: Mononoki,
+monospace;
+$small-font-size : $base-font-size - 2;
+
+// Line and Letter Spacing
+$base-line-height   : 1.35 !important;
+$base-letter-spacing: 0px !important;
+$spacing-unit       : 2em;
+
+// Colours
+$title-color     : #000000;
+$text-color      : #000000;
+$dark-text-color : #ffffff;
+$light-text-color: #000000;
+
+$background-color      : #fdfdfd;
+$dark-background-color : #202124;
+$light-background-color: #f4f1ed;
+
+$blue-color      : #2a7ae2;
+$blue-color-dark : #205caa;
+$blue-color-light: #2a7ae2;
+
+$grey-color      : #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark : darken($grey-color, 25%);
+
+$code-background-color: #f8f8f8 !default;
+
+$table-text-align     : left !default;
+$table-text-color     : lighten($text-color, 18%) !default;
+$table-zebra-color    : lighten($blue-color, 46%) !default;
+$table-header-bg-color: lighten($blue-color, 43%) !default;
+$table-header-border  : lighten($blue-color, 36%) !default;
+$table-border-color   : $grey-color-light !default;
+
+// Width of the content area
+$content-width: 950px;
+
+$on-palm  : 600px;
+$on-laptop: 950px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin rounded($radius:4px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius   : $radius;
+    border-radius        : $radius;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base", "image", "syntax-highlighting", "table";

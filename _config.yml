@@ -3,8 +3,7 @@
 title: Aditya Wagh
 firstname: Aditya
 secondname: Wagh
-general_email: aditya@adityawagh.ml
-remote_theme: ad1tyawagh/ad1tyawagh.github.io
+
 author: Aditya Wagh
 logo: /assets/images/icon.png
 lang: en-US
@@ -14,18 +13,21 @@ url: "https://www.adityawagh.ml/"
 twitter_username: ad1tyawagh
 github_username: ad1tyawagh
 linkedin_username: waghaditya
+general_email: aditya@adityawagh.ml
 
 # Build settings 
 
+remote_theme: ad1tyawagh/ad1tyawagh.github.io
 markdown: kramdown
 kramdown:
   math_engine: katex
   input: GFM
   auto_ids: true
-  syntax_highlighter: rouge
+  parse_block_html: true
 highlighter: rouge  
 sass:
   style: compressed
+
 # Other options
 
 permalink: blog/:title
@@ -41,5 +43,4 @@ plugins:
 - jekyll-youtube
 - jekyll-seo-tag 
 - jekyll-font-awesome-sass
-- jekyll-toc
 - jekyll-autoprefixer

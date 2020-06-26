@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cable Detection
+
 ---
 
 # Power Cable detection using Masked Region Proposal Convolutional Networks

@@ -2,8 +2,10 @@
 name: Refresh
 
 on:
+  branches:
+    - gh-pages
   schedule:
-    - cron:  '0 3 * * *' # Runs every day at 3am
+    - cron:  '46 6 * *' # Runs every day at 3am
 
 jobs:
   refresh:

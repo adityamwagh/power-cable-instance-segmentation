@@ -5,8 +5,10 @@ on:
   branches:
     - gh-pages
   schedule:
+    branches:
+    - master
     - cron:  '46 6 * *' # Runs every day at 3am
-
+ 
 jobs:
   refresh:
     runs-on: ubuntu-latest

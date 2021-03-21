@@ -1,23 +1,20 @@
 # Site settings
-
 title: Aditya Wagh
 firstname: Aditya
 secondname: Wagh
-
+general_email: aditya@adityawagh.ml
 author: Aditya Wagh
 logo: /assets/images/icon.png
 lang: en-US
 resume_link: https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf
 baseurl: ""
-url: "https://www.adityawagh.ml/" 
+url: "https://www.adityawagh.ml/"
 twitter_username: ad1tyawagh
 github_username: ad1tyawagh
 linkedin_username: waghaditya
-general_email: aditya@adityawagh.ml
-stackoverflow_username: 11957253/ad1tyawagh 
+stackoverflow_username: 11957253/ad1tyawagh
 
-# Build settings 
-
+# Build settings
 remote_theme: ad1tyawagh/ad1tyawagh.github.io
 markdown: kramdown
 kramdown:
@@ -27,24 +24,23 @@ kramdown:
   parse_block_html: true
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    css_class: 'highlight'
-highlighter: rouge  
+    css_class: "highlight"
+highlighter: rouge
 sass:
   style: compressed
-
 # Other options
 
 permalink: blog/:title
 
 plugins:
-- github-pages
-- jekyll-seo-tag
-- jekyll-menus
-- jekyll-remote-theme 
-- jekyll-archives
-- jekyll-compose 
-- jemoji
-- jekyll-youtube
-- jekyll-seo-tag 
-- jekyll-font-awesome-sass
-- jekyll-autoprefixer
+  - github-pages
+  - jekyll-seo-tag
+  - jekyll-menus
+  - jekyll-remote-theme
+  - jekyll-archives
+  - jekyll-compose
+  - jemoji
+  - jekyll-youtube
+  - jekyll-seo-tag
+  - jekyll-font-awesome-sass
+  - jekyll-autoprefixer

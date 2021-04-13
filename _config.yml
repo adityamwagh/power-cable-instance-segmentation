@@ -6,16 +6,16 @@ general_email: aditya@adityawagh.ml
 author: Aditya Wagh
 logo: /assets/images/icon.png
 lang: en-US
-resume_link: https://raw.githubusercontent.com/ad1tyawagh/resume/master/aditya_resume.pdf
+resume_link: https://raw.githubusercontent.com/adityamwagh/cv/master/AdityaWagh_CV.pdf
 baseurl: ""
 url: "https://www.adityawagh.ml/"
-twitter_username: ad1tyawagh
-github_username: ad1tyawagh
-linkedin_username: waghaditya
-stackoverflow_username: 11957253/ad1tyawagh
+twitter: adityamwagh
+github: adityamwagh
+linkedin: adityamwagh
+stackoverflow: 11957253/adityamwagh
 
 # Build settings
-remote_theme: ad1tyawagh/ad1tyawagh.github.io
+remote_theme: adityamwagh/adityamwagh.github.io
 markdown: kramdown
 kramdown:
   math_engine: katex
@@ -25,7 +25,8 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: "highlight"
-highlighter: rouge
+    block:
+      line_numbers: false
 sass:
   style: compressed
 # Other options

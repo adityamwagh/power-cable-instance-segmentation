@@ -5,11 +5,11 @@
 
 # - title: "Blog"
 #   href: "/blog"
-#   icon: "fa  fa-pencil"
+#   icon: "fa fa-pencil"
 
 - title: "Projects"
-  href: "https://www.adityawagh.ml/#projects"
-  icon: fas  fa-tasks
+  href: "/#projects"
+  icon: fas fa-tasks
 
 - title: "CV"
   href_phone: "https://raw.githubusercontent.com/adityamwagh/resume/master/aditya_resume.pdf"

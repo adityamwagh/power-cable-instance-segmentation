@@ -3,13 +3,13 @@
   href: "/index"
   icon: fas fa-home
 
-- title: "Blog"
-  href: "/blog"
-  icon: "fa  fa-pencil"
+# - title: "Blog"
+#   href: "/blog"
+#   icon: "fa  fa-pencil"
 
-# - title: "Projects"
-#   href: "https://www.adityawagh.ml/#projects"
-#   icon: fas  fa-tasks
+- title: "Projects"
+  href: "https://www.adityawagh.ml/#projects"
+  icon: fas  fa-tasks
 
 - title: "CV"
   href_phone: "https://raw.githubusercontent.com/adityamwagh/resume/master/aditya_resume.pdf"
